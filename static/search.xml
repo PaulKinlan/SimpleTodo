@@ -1,0 +1,6 @@
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/"> 
+    <ShortName>Simple todo</ShortName> 
+    <Description>Simple Todo List</Description> 
+    <Url type="text/html" method="get" template="http://localhost:8100/search.html?q={searchTerms}"></Url> 
+    <Url type="application/x-suggestions+json" method="get" template="http://suggestqueries.google.com/complete/search?output=firefox&amp;qu={searchTerms}"></Url> 
+</OpenSearchDescription>

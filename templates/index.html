@@ -1,0 +1,47 @@
+<html manifest="cache.manifest">
+  <head profile="http://a9.com/-/spec/opensearch/1.1/">
+    <title>Simple todo</title>
+    <link rel="stylesheet" href="static/base.css" />
+    <link rel="shortcut icon" href="static/favico.ico" /> 
+    <meta name="google-site-verification" content="giZg2GBz30YubQK1LdzRGlQBGHjMWhUeeSO8TR_uiwE" />
+    <link 
+      rel="search" 
+      type="application/opensearchdescription+xml" 
+      href="static/search.xml" 
+      title="Simple todo" />
+    <script src="/static/script.js"></script>
+  </head>
+  <body onload="init();">
+    <header>
+    <div id="account">
+      You are logged in: {{user.email}}
+    </div>
+    </header>
+    <div id="container">
+      <h1>Simple Todo</h1>
+      <ul id="todoItems"></ul>
+      <form type="post" onsubmit="addTodo(); return false;">
+        <input type="text" id="todo" name="todo" 
+          placeholder="What do you need to do?" autofocus speech webkit-speech>
+      </form>
+    </div>
+    <div id="nav">
+      <a href="help.html">Online Help</a>
+      <span id="status"></span>
+      <button id="update">Update Available</button>
+    </div>
+  </body>
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-114468-18']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+</html>

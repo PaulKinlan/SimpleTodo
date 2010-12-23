@@ -1,0 +1,17 @@
+{
+  "name" : "Simple TODO's",
+  "description" : "The simplest TODO list editor in the world",
+  "version": "1",
+  "icons": {
+    "24": "logo24.png",
+    "128": "logo.png"
+  },
+  "permissions": [
+    "unlimited_storage"
+  ],
+  "app" : {
+    "launch": {
+      "local_path": "index.html"
+    }
+  }
+}

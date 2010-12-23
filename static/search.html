@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Simple todo</title>
+    <link rel="stylesheet" href="/static/base.css">
+    <link rel="shortcut icon" href="/static/favico.ico"> 
+    <link rel="search" type="application/opensearchdescription+xml" href="static/search.xml" title="Simple todo">
+    <script src="script.js"></script>
+  </head>
+  <body onload="initResult();">
+    <div id="container">
+      <h1>Simple Todo Search Results</h1>
+      <ul id="todoItems"></ul>
+    </div>
+    <div id="nav">
+      <a href="help.html">Online Help</a>
+      <span id="status"></span>
+      <button id="update">Update Available</button>
+    </div>
+    <a href="#" onclick="window.external.AddSearchProvider('/search.xml');">Search</a>
+  </body>
+</html>

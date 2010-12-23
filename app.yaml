@@ -1,0 +1,25 @@
+application: simpletodo-app
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+- url: /cache\.manifest
+  static_files: cache.manifest
+  mime_type: text/cache-manifest
+  upload: cache.manifest
+- url: /
+  script: main.py
+- url: /googled0269af0b2fca915.html
+  static_files: googled0269af0b2fca915.html
+  upload: googled0269af0b2fca915.html
+- url: /index.html
+  script: main.py
+- url: /embed.html
+  script: main.py
+- url: /static/(.*)
+  static_files: static/\1
+  upload: static/(.*\.(gif|swf|mp3|css|js|png|jpeg|jpg|svg|ogg|ogm|fla|html|ico|txt|xml))
+
+builtins:
+- datastore_admin: on

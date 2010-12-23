@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# A list of the files that are need for this application
+# Rev 54
+
+/static/script.js 
+/static/base.css
+/static/search.xml
+
+FALLBACK:
+/ /static/offline.html

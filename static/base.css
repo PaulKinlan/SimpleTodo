@@ -1,0 +1,86 @@
+body {
+  background-color: #ddd;
+  font-family: Arial;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: stretch;
+  -webkit-box-pack: center;
+}
+
+header {
+  display: -webkit-box;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: center;
+}
+
+h1 {
+  margin-top: 0px;
+}
+
+#update {
+  display:none;
+}
+
+#todoItems {
+  -webkit-box-flex: 1;
+}
+
+#todoItems li {
+  font-size: 1.6em;
+}
+
+#todoItems a {
+  color: red;
+}
+
+#account {
+  
+  background-color: #FB6100;
+  color: black;
+  padding: 5px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+#container {
+  border: solid 3px white;
+  background-color: rgba(0,0,0,0.9);
+  color: white;
+  margin: 50px 20% 0 20%;
+  padding: 10px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+  -moz-box-shadow: 0 0 15px #000;
+  -webkit-box-shadow: 0 0 15px #000;
+  -webkit-box-flex:1;
+  
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-pack: start;
+}
+
+
+
+#nav {
+  border-top: solid 1px #666;
+  color: #666;
+  margin: 10px 25% 0 25%;
+  padding:10px;
+}
+
+#container input[type="text"] {
+  font-size: 2em;
+  height: 2em;
+  width: 100%;
+}
+
+#container input[type="submit"] {
+  font-size: 2em;
+  border: solid 1px black;
+  height: 2em;
+}
+
